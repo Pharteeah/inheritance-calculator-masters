@@ -125,7 +125,7 @@ const ResultScreen = ({ route, navigation }) => {
     }
 
       // Full Sister
-    if (paternalHalf === 1&& sons == 0 && (!trueGrandfather || trueGrandfather =="no") && (!father || father === no)&& daughters == 0) {
+    if (paternalHalf === 1 && sons == 0 && (!trueGrandfather || trueGrandfather =="no") && (!father || father === no)&& daughters == 0) {
     shares.paternalHalf =remainingWealth * 1 / 2;
     } else if (paternalHalf > 1&& sons == 0 && (!trueGrandfather || trueGrandfather =="no") && (!father || father === no)&& daughters == 0) {
     shares.paternalHalf =remainingWealth * 2 / 3;

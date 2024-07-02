@@ -207,15 +207,15 @@ const CalculateScreen = ({ navigation }) => {
         </Picker>
       </View>
 
-      <Text style={styles.label}>Is sonsDaughter Alive?</Text>
-      <View style={styles.pickerContainer}>
-        <Picker selectedValue={sonsDaughter} onValueChange={(itemValue) => setSonsDaughter(itemValue)} style={styles.picker}>
-          <Picker.Item label="Select" value="" />
-          <Picker.Item label="Yes" value="yes" />
-          <Picker.Item label="No" value="no" />
-        </Picker>
-      </View>
-
+      
+      <Text style={styles.label}>Number of sonsDaughter</Text>
+      <TextInput
+        style={styles.input}
+        keyboardType="numeric"
+        value={sonsDaughter.toString()}
+        onChangeText={(value) => setSonsDaughter(Number(value))}
+        placeholder="Enter number of sonsDaughter"
+      />
       
 
       <TouchableOpacity style={styles.button} onPress={handleCalculate}>
