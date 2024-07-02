@@ -22,20 +22,23 @@ const ResultScreen = ({ route, navigation }) => {
 };
   const {  gender,
     propertyValue,
-    father,
     mother,
     wive,
     husband,
     sons,
     daughters,
     fullbrothers,
-    paternalHalf,
     fullsisters,
-    trueGrandfather,
-    trueGrandmother,
-    sonsDaughter,
-    uterineBrother,
-    maternalHalf } = route.params;
+    maternalSiblings,
+    paternalGrandfather,
+    maternalGrandmother,
+    paternalGrandmother,
+    fullNephew,
+    paternalNephew,
+    fullUncle,
+    paternalUncle,
+    fullCousin,
+    paternalCousin } = route.params;
   const [result, setResult] = useState({});
   // const [chartData, setChartData] = useState([]);
 
